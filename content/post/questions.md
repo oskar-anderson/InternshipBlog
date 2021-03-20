@@ -1,0 +1,46 @@
++++
+title = "Minu ootused praktikale"
+date = 2021-03-16
+author = "Karl Oskar Anderson"
++++
+
+### Millised on Sinu ootused praktikale?
+
+Soovin tutvuda peale arendamise ka teiste IT valdkonna tööde etappidega. Tahan saada kogemust olemasolevate projektide analüüsimise, testimise ja dokumenteerimisega, sest koolis nende teemadega päris projekti näitel kokku ei puututud. Saan oma oskused proovile panna probleemide lahendamisega, millega ettevõtted reaalses elus kokku puutuvad.
+
+
+&nbsp; 
+### Kuivõrd omad eelnevat kogemust?
+
+Ei oma.
+
+
+&nbsp; 
+### Niivõrd, kui seda hetkel mäletad- mis olid sinu põhjused seda eriala õppima tulla?
+
+IT valdkond tundus põnev, vastas minu huvidele ja paljud sõbrad juba õppisid/ töötasid selles valdkonnas või plaanisid seda õppima minna. Küberturve ja administreerimise tundusid igavad, mitte loomingulised - enne oleks tahtnud õppida midagi valmis teha. Tuttav ütles, et informaatika on väga teoreetiline. Seega jäi valikuks äriinfotehnoloogija ja IT-süsteemide arendus. Kõige rohkem nägin end IT-süsteemide arendajana, sest äriinfotehnoloogiaga kaasnev majandusõpetus ei tundunud mulle nii loominguline. 
+
+
+&nbsp; 
+### Mis sind motiveeris? Kuidas kujutasid sel erialal töötamist ette, kuivõrd hea ettekujutus sul oli?
+
+Tahtsin olla konkureerivatest õpilastest parem. 2. semestril mängisid paljud õpilased tunnis Minecrafti, 4. semestril neid enam ei olnud.
+
+Kujutasin ette, et loon veebirakendusi, mobiilirakendusi ja desktopi programme. Sain teada, et desktopi programme enam ei tehta ja mobiilirakenduste arendamine on kohutav.
+
+&nbsp; 
+### Sinu arvates (tänaste teadmiste ja kogemuste baasil), mis on selles rollis töötamisel (millel praktikat alustad) kõige olulisemad oskused, pädevused, omadused?
+
+Suhtlemine, initsatiiv ja oma huvide eest seismine. 
+
+Koolis tehakse iseseisvaid ülesandeid, mis on valitud, et kõik saaksid hakkama ja mis oleks lihtsasti hinnatavad. Tööl peab nõu küsima ja tagasisidet saama, et soovitud tulemuseni jõuda. 
+
+Tehnilisi oskusi saad vajadusel jooksvalt õppida. Tähtis on pealehakkamine.
+
+
+&nbsp; 
+### Ole hea, kirjelda ka lühidalt, kuidas leidsid praktikakoha? Milline oli sinu kogemus tööandjatega suhtlemisel ja kandideerimisel?
+
+Vaatasin erinevaid praktika- ja töökuulutusi. Praktikad algavad üldiselt mais seoses suviste praktikaprogrammidega. See mulle ei sobinud, sest mul oli vaja praktikaga alustada veebruaris või märtsis, et jõuda suvel kaitseväkke.
+
+Otsustasin oma tahet rohkem üles näidata, otsisin Tallinna IT sektori ettevõtteid ja saatsin neile e-kirje oma praktika soovist. Meilile vastati kiiresti, 1-2 päeva jooksul. Enamus ütlesid ära või pakkusid suve praktikaprogrammi. Firmadega, kes olid huvitatud minust kui praktikandist, suhtlesin videokonverentsidel. Inimesed suhtlesid minuga viisakalt, aga tõid välja ka mu puudujäägid - rühmas programmeerimise kogematus, kooliväliste projektide olematus, PHP oskuse minimaalsus. Tänu järjepidevusele ja headele kontaktidele leidsin endale siiski praktikakoha.

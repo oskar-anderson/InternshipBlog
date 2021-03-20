@@ -1,0 +1,14 @@
+baseURL = "https://oskar-anderson.github.io/InternshipBlog/"
+title = "Home"
+theme = "ghostwriter"
+
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "Sirowa praktikablogi"
+    description = "TTÜ praktika, Karl Oskar Anderson"
+    opengraph = true
+    dateFormat = "Mon, Jan 2, 2006"
+
+[Permalinks]
+    post = "content/:filename/"
