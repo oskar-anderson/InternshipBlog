@@ -1,4 +1,4 @@
-baseURL = "https://oskar-anderson.github.io/InternshipBlog/"
+baseURL = "https://oskar-anderson.github.io/my-internship-blog/"
 title = "Home"
 theme = "ghostwriter"
 
@@ -9,6 +9,8 @@ theme = "ghostwriter"
     description = "TTÜ praktika, Karl Oskar Anderson"
     opengraph = true
     dateFormat = "Mon, Jan 2, 2006"
+    custom_css = ["mycss.css"]
+    picturepath = "/my-internship-blog/pictures/"
 
 [Permalinks]
     post = "content/:filename/"

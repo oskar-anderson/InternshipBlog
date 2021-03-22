@@ -15,7 +15,7 @@ mv .gittemp public/.git
 # Go To Public folder
 cd public
 
-echo "pushing..."
+read -n "Press any key to push..."
 # Add changes to git.
 git add -A
 

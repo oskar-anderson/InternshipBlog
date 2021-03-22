@@ -1,4 +1,5 @@
-# InternshipBlog Generator 
+# Internship blog generator 
 
-https://github.com/oskar-anderson/InternshipBlog
+Hugo static site generator (SSG) project for my internship blog:
+https://github.com/oskar-anderson/my-internship-blog
 
