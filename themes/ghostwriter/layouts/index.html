@@ -3,6 +3,16 @@
 <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
     {{ partial "intro.html" . }}
 
+    {{range $name, $taxonomy := .Site.Taxonomies.tags}} 
+    {{ $cnt := .Count }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <li class="tagbutton">
+                <a href="{{ .RelPermalink }}">{{ .Params.Title }}</a>
+                <sup>{{$cnt}}</sup>
+            </li>
+        {{end}}
+    {{end}}
+
     <ol class="post-list">
         {{ $pag := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
         {{ range $pag.Pages }}
