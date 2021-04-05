@@ -1,33 +1,19 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
-# Delete scaffolding but save Git
-mv public/.git .gittemp
-rm -rf public
-
-# Build the project.
-hugo # if using a theme, replace by `hugo -t <yourtheme>`
-
-# Restore Git
-mv .gittemp public/.git
-
-# Go To Public folder
 cd public
-
-read -n "Press any key to push..."
-# Add changes to git.
-git add -A
-
-# Commit changes.
+echo `pwd`
+read -p 'submit any key to continue?'
+echo "git init"
+git init
+echo "git remote add origin "https://github.com/oskar-anderson/my-internship-blog""
+git remote add origin "https://github.com/oskar-anderson/my-internship-blog"
+echo "git add ."
+git add .
+echo "git pull --rebase origin master"
+git pull --rebase origin master
 msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
+echo "git commit -m "$msg""
 git commit -m "$msg"
-
-# Push source and build repos.
+echo "git push origin master"
 git push origin master
-
-# Come Back
-cd ..
+read -p 'done...'
