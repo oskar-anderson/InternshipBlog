@@ -3,6 +3,8 @@
 Hugo static site generator (SSG) project for my internship blog:
 https://github.com/oskar-anderson/my-internship-blog
 
+test1
+
 ## Deploying
 
 Github Pages requires a seperate repo for the generated pages. Other hosting options might not.
