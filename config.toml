@@ -5,6 +5,7 @@ theme = "hugo-theme-bootstrap4-blog"
 paginate = 5
 # number of words to use for summary on home/category/tag pages (Default: 70)
 summaryLength = 20
+enableEmoji = true
 
 [Params]
     mainSections = ["post"]

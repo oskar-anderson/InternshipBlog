@@ -2,8 +2,8 @@
 
 <article class="blog-post" style="margin-bottom: 25px">
   <header>
-    <h2 class="blog-post-title" dir="auto">
-      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    <h2 dir="auto">
+      <a class="link-with-hover-effect" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </h2>
     <p class="blog-post-meta">
       <time 
@@ -14,10 +14,13 @@
       {{ .Params.author | default .Site.Params.author }}
     </p>
   </header>
-  <div>
-    {{ .Summary }}
-    <br>
-    <a href='{{ .Permalink }}'>{{ i18n "readMore" }}</a>
+  <div style="margin-bottom: 3em;">
+    <div style="margin-bottom: 1em;">
+      {{ .Summary }}
+    </div>
+    <div>
+      <a href='{{ .Permalink }}'>{{ i18n "readMore" }}</a>
+    </div>
   </div>
 </article> <!-- /.blog-post -->
 
