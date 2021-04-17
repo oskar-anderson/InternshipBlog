@@ -1,25 +1,26 @@
 # Internship blog generator 
 
 Hugo static site generator (SSG) project for my internship blog:
-https://github.com/oskar-anderson/my-internship-blog
+https://oskar-anderson.github.io/InternshipBlog/
 
-test3
+**Old solution**
+https://github.com/oskar-anderson/my-internship-blog
 
 ## Deploying
 
-Github Pages requires a seperate repo for the generated pages. Other hosting options might not.
+:fire: Github action deploys generated pages automatically to gh-pages branch.
 
-I could not get automation script working, so follow these steps: 
+**Old solution**
+Seperate repo for the generated pages is required by Github Pages. I could not get automatic deployment script working, so follow these steps.
 
-1. Option one ('public' folder is already a git repo) 
-
+1. 'public' folder is already a git repo
 Delete everything except .git and generate the files.
 
-2. Option two ('public' folder is not a git repo)
+2. 'public' folder is not a git repo
+Option 2.1 
 Clone the generated site, put .git into 'public' folder and add the generate files to git.
 
-3. Option three  ('public' folder is not a git repo)
-
+Option 2.2
 Delete public folder and run these commands
 ```bash
 hugo
