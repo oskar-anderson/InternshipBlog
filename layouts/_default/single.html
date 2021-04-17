@@ -1,0 +1,46 @@
+{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h2>
+    <p class="blog-post-meta">
+{{ if not .PublishDate.IsZero }}<time {{ .Date.Format "2006-01-02" | printf "datetime=%q" | safeHTMLAttr }}>{{ .Date.Format .Site.Params.dateFormat }}</time>{{ end }}
+{{ i18n "authoredBy" }} 
+{{ .Params.author | default .Site.Params.author }}
+{{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</p>
+  </header>
+  {{ .Content }}
+  
+  {{ if .IsTranslated }}
+  <h4>{{ i18n "translations" }}</h4>
+  <ul>
+    {{ range .Translations }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  
+  <div class="comments">
+    <hr>
+    <h2>Comments</h2>
+    <script src="https://utteranc.es/client.js"
+      repo="oskar-anderson/InternshipBlog"
+      issue-term="title"
+      label="utterance-comment"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+
+</article> <!-- /.blog-post -->
+
+{{ end }}
+
+{{- /* vim: set ts=2 sw=2 et: */}}

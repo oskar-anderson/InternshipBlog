@@ -1,6 +1,6 @@
-baseURL = "https://oskar-anderson.github.io/my-internship-blog/"
+baseURL = "https://oskar-anderson.github.io/InternshipBlog/"
 title = "My Internship Blog"
-theme = "hugo-theme-bootstrap4-blog"
+# theme = "ghostwriter"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
 # number of words to use for summary on home/category/tag pages (Default: 70)
@@ -15,9 +15,7 @@ enableEmoji = true
     description = "TTÜ praktika, Karl Oskar Anderson"
     opengraph = true
     dateFormat = "2006-01-02"
-    custom_css = ["maincss.css"]
-    picturepath = "/my-internship-blog/pictures/"
-    sharingicons = false
+    picturepath = "/InternshipBlog/pictures/"
 
 [Permalinks]
     post = "content/:filename/"

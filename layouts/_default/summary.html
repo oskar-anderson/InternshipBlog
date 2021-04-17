@@ -1,0 +1,27 @@
+{{ $dateFormat := default "2006-01-02" (index .Site.Params "date_format") }}
+
+<article class="blog-post" style="margin-bottom: 25px">
+  <header>
+    <h2 dir="auto">
+      <a class="link-with-hover-effect" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h2>
+    <p class="blog-post-meta">
+      <time 
+        {{ .Date.Format "2006-01-02" | printf "datetime=%q" | safeHTMLAttr }}>
+        {{ .Date.Format $dateFormat }}
+      </time> 
+      {{ i18n "authoredBy" }} 
+      {{ .Params.author | default .Site.Params.author }}
+    </p>
+  </header>
+  <div style="margin-bottom: 3em;">
+    <div style="margin-bottom: 1em;">
+      {{ .Summary }}
+    </div>
+    <div>
+      <a href='{{ .Permalink }}'>{{ i18n "readMore" }}</a>
+    </div>
+  </div>
+</article> <!-- /.blog-post -->
+
+{{- /* vim: set ts=2 sw=2 et: */}}

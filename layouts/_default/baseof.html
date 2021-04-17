@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" {{ if or (eq .Lang "ar") (eq .Lang "fa") }}dir="rtl"{{ end }}>
+
+  <head>
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+
+    <link type="text/css" href='{{ "css/bootstrap.min.css" | absLangURL }}' rel="stylesheet" crossorigin="anonymous">
+    <link type="text/css" href='{{ "css/main-layout.css" | absLangURL }}' rel="stylesheet" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href='{{ "favicon.png" | absLangURL }}' crossorigin="anonymous">
+
+    {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="container">
+          <div class="site-title-wrapper">
+              {{ with .Site.Params.logo }}
+                  <a class="site-logo" href="{{ .Site.BaseURL }}">
+                      <img src="{{ . }}" alt="{{ .Title }}" />
+                  </a>
+              {{ else }}
+                  <h1 class="site-title">
+                      <a href="{{ .Site.BaseURL }}">Home</a>
+                  </h1>
+              {{ end }}
+          </div>
+      </div>
+    </header>
+
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+      {{ if .Description }}
+          <p class="post-description" itemprop="description">{{ .Description }}</p>
+      {{ end }}
+
+    </header>
+
+    {{ block "body" . }}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 blog-main">
+          {{ block "main" . }}{{ end }}
+        </div>
+        {{ partial "sidebar.html" . }}
+
+      </div>
+    </div>
+    {{ end }}
+
+    <hr>
+    <footer style="margin-bottom: 20px;">    
+      <div class="container">
+        <a href="#">{{ i18n "backToTop" }}</a>
+        <div class="site-title-wrapper">
+          <h1 class="site-title">
+              <a href="{{ .Site.BaseURL }}">Home</a>
+          </h1>
+        </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+{{- /* vim: set ts=2 sw=2 et: */}}
