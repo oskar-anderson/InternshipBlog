@@ -1,4 +1,4 @@
-baseURL = "https://oskar-anderson.github.io/internshipBlog/"
+baseURL = "https://oskar-anderson.github.io/InternshipBlog/"
 title = "My Internship Blog"
 # theme = "ghostwriter"
 # number of posts to show on home/category/tag pages (Default: 10)
