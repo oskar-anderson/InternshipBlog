@@ -1,11 +1,11 @@
-{{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
 
 <article class="blog-post">
   <header>
     <h2 class="blog-post-title" dir="auto">
-      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
     <p class="blog-post-meta">
 {{ if not .PublishDate.IsZero }}<time {{ .Date.Format "2006-01-02" | printf "datetime=%q" | safeHTMLAttr }}>{{ .Date.Format .Site.Params.dateFormat }}</time>{{ end }}
@@ -29,9 +29,15 @@
   <div class="comments">
     <hr>
     <h2>Comments</h2>
+    <span style="display: none;">
+      <ul>
+        <li>issue-term={{ .Title }}</li>
+        <li>issue-term={{ .Params.commentID }}</li>
+      </ul>
+    </span>
     <script src="https://utteranc.es/client.js"
       repo="oskar-anderson/InternshipBlog"
-      issue-term="title"
+      issue-term="{{ .Params.commentID }}"
       label="utterance-comment"
       theme="github-light"
       crossorigin="anonymous"

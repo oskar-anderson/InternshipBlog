@@ -13,7 +13,6 @@ enableEmoji = true
     headline = "Sirowa praktikablogi"
     author = "Karl Oskar Anderson"
     description = "TTÜ praktika, Karl Oskar Anderson"
-    opengraph = true
     dateFormat = "2006-01-02"
     picturepath = "/InternshipBlog/pictures/"
 
